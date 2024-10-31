@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khadim Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <h1>Registeration Form</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+    
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" placeholder="Enter your age">
+    
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+    
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+    
+                <br>
+                <label for="gender">Gender:</label>
+                <label for="male">Male</label>
+                <input type="radio" name="male" id="male">
+    
+                <label for="female">Female</label>
+                <input type="radio" name="female" id="female">
+    
+                <br>
+                <label for="pakistani">Pakistani</label>
+                <input type="checkbox" name="pakistani" id="pakistani">
+    
+                <br>
+                <input list="city">
+                <datalist id="city">
+                    <option value="Islamabad"></option>
+                    <option value="Lahore"></option>
+                    <option value="Karachi"></option>
+                    <option value="Multan"></option>
+                    <option value="Faislabad"></option>
+                </datalist>
+    
+                <br>
+                <label for="range">How you like our services?</label>
+                <input type="range" name="range" id="range">
+    
+                <br>
+                <label for="color">Fav Color:</label>
+                <input type="color" name="favclr" id="favclr">
+    
+                <br>
+                <label for="date">D.O.B:</label>
+                <input type="date" name="date" id="date">
+    
+                <br>
+                <label for="time">Preffered Time:</label>
+                <input type="time" name="time" id="time">
+                
+                <br> 
+                <input type="reset" value="Clear all">
+    
+                <input type="submit" value="Submit">
+    
+            </form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE declaration defines the document type and version of HTML -->
+<html lang="en">
+<!-- The opening <html> tag indicates the start of an HTML document -->
+
+<head>
+  <!-- The <head> section contains meta-information about the document -->
+  <meta charset="UTF-8">
+  <!-- The <meta charset="UTF-8"> element specifies the character encoding for the HTML document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The <meta name="viewport" content="width=device-width, initial-scale=1.0"> element makes the webpage responsive on all devices -->
+  <title>My First HTML Page</title>
+  <!-- The <title> element defines the title of the document, shown in the browser's title bar or tab -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- The <link> element links an external CSS file to the HTML document for styling -->
+</head>
+
+<body>
+  <!-- The <body> section contains the content of the HTML document -->
+
+  <header>
+    <!-- The <header> element represents the introductory content or a set of navigational links -->
+    <h1>Welcome to My First HTML Page</h1>
+    <!-- The <h1> element represents a top-level heading -->
+    <nav>
+      <!-- The <nav> element represents a section of navigation links -->
+      <ul>
+        <!-- The <ul> element represents an unordered list -->
+        <li><a href="#home">Home</a></li>
+        <!-- The <li> element represents a list item; <a> is a hyperlink -->
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- The <main> element represents the main content of the document -->
+    <section id="home">
+      <!-- The <section> element represents a thematic grouping of content, with an id for navigation -->
+      <h2>Home</h2>
+      <!-- The <h2> element represents a second-level heading -->
+      <p>This is the home section of the page.</p>
+      <!-- The <p> element represents a paragraph -->
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>This is the about section of the page.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <!-- The <form> element represents a section for input controls that users can fill out and submit -->
+        <label for="name">Name:</label>
+        <!-- The <label> element represents a caption for an item in a user interface -->
+        <input type="text" id="name" name="name">
+        <!-- The <input> element represents an input control; type="text" is for single-line text input -->
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <!-- type="email" is for email input -->
+        <br>
+        <input type="submit" value="Submit">
+        <!-- type="submit" is for the submit button -->
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- The <footer> element represents the footer of the document -->
+    <p>&copy; 2024 My First HTML Page</p>
+    <!-- The &copy; entity represents the copyright symbol -->
+  </footer>
+</body>
+
+</html>

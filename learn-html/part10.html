@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Form Attributes</h2>
+    <ol>
+        <li>Textbox = small text as input</li>
+        <li>Textarea = large text as input</li>
+        <li>Radio Button = select only one item among 2-3</li>
+        <li>Submit Button = used to submit the form</li>
+        <li>Select Box 
+            <ul>
+            <li>optgroup</li>
+            <li>option</li>
+        </ul></li>
+        <li>Reset Button</li>
+        <li>Check Box</li>
+        <li>File Input</li>
+        <li>Fieldset</li>
+    </ol>
+
+    <h2>Input Attributes</h2>
+    <p>type, value, palceholder</p>
+
+    <h2>Form for Enquiry</h2>
+
+    <form>
+        <fieldset>
+            <legend>Enquiry</legend>
+            Name: <input type="text" name="name" value="text"> 
+            <!-- value="text" is a default text -->
+            <br>
+            <br>
+            Address: <textarea name="Address" placeholder="Enter your Address"></textarea>
+            <br>
+            <br>
+            Gender: 
+            <input type="radio" value="m" name="gender"> Male
+            <input type="radio" value="f" name="gender"> Female
+            <br>
+            <br>
+            Country:
+            <select>
+                <option>Select your Country</option>
+                <optgroup label="Countries">
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Turkey">Turkey</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            Hobbies:
+            <input type="checkbox" name="Hobbies[]">Coding
+            <input type="checkbox" name="Hobbies[]">Reading
+            <input type="checkbox" name="Hobbies[]">Painting
+            <br>
+            <br>
+            Image:
+            <input type="file" name="image">
+            <br>
+            <br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

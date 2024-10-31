@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Form Elements</title>
+</head>
+<body>
+    <h2>HTML 5 Form Elements</h2>
+    <ol>
+        <li>Required = Required input</li>
+        <li>Placeholder = show the text when the input has no value</li>
+        <li>Autofocus = automatically focus on input</li>
+        <li>Value = by default value</li>
+        <li>Read Only = you can real only this attribute, you cannot write anything in it but it <mark>will be submitted</mark></li>
+        <li>Disabled = not mutable, not focusable, or <mark>not even submitted</mark> with the form</li>
+        <li>Checked = by default checked the input, you can unchecked it when you are filling the form</li>
+        <li>Min = minimum numeric value</li>
+        <li>Max = maximum numeric value</li>
+        <li>Maxlength = used in textbox which shows maximum length of a text(input), it will not accept the text(characters) greater then the given length</li>
+    </ol>
+
+    <form>
+        <fieldset>
+            <legend>HTML 5</legend>
+
+            Name: 
+            <input type="text" name="name" required="" placeholder="Enter your name" autofocus="" maxlength="20">
+            <br>
+            <br>
+            Color: 
+            <input type="color" name="color" value="#FF0000">
+            <br>
+            <br>
+            Company Name: <input type="text" value="Khadim's Company" readonly="">
+            <br>
+            <br>
+            Company Year: <input type="text" value="2020" disabled="">
+            <br>
+            <br>
+            Hobbies: 
+            <input type="checkbox" name="Hobbies[]" checked=""> Coding
+            <input type="checkbox" name="Hobbies[]"> Painting
+            <br>
+            <br>
+            Gender:
+            <input type="radio" value="m" name="gender" checked=""> Male 
+            <input type="radio" value="f" name="gender"> Female
+            <br>
+            <br>
+            Age: <input type="number" name="age" min="18" max="30">
+            <br>
+            <br>
+            Range: <input type="range" name="range" min="20" max="90" value="40">
+            <!-- if we submit the range=0 then it will be automatically submitted 20 because min is 20 and if we submit the range=100 then it will be automatically submitted 90 because max is 90. -->
+            <br>
+            <br>
+            <input type="submit" name="submit" value="Done">
+
+        </fieldset>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h2>Table tag and its childer tags</h2>
+
+    <table border="2px">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Fee</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Web Development</td>
+                <td>10000</td>
+                <td>2.5-3 Months</td>
+            </tr>
+
+            <tr>
+                <td>Laravel</td>
+                <td>7000</td>
+                <td>2 Months</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <p>Want the table in center? set align</p>
+
+    <h2>Table Attributes</h2>
+    <p>bgcolor, align, border, callpadding, cellspacing, width, height</p>
+
+    <table border="5px" align="center" bgcolor="yellow" cellpadding="10px" cellspacing="10px" width="500px" height="200px">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Fee</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr bgcolor>
+                <td>Web Development</td>
+                <td>10000</td>
+                <td>2.5-3 Months</td>
+            </tr>
+
+            <tr>
+                <td>Laravel</td>
+                <td>7000</td>
+                <td>2 Months</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- table 2 -->
+    <h2>Table Raw Attributes (tr)</h2>
+    <p>bgcolor, align (by default left)</p>
+
+    <table border="2" width="500px" height="100px">
+        <thead>
+            <tr bgcolor="bluelight">
+                <th>Course</th>
+                <th>Fee</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr bgcolor="orange" align="center">
+                <td>Web Development</td>
+                <td>10000</td>
+            </tr>
+
+            <tr bgcolor="grayb">
+                <td>Laravel</td>
+                <td>7000</td>
+            </tr>
+
+            <tr bgcolor="pink" align="right">
+                <td>SQA</td>
+                <td>6000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- table 3 -->
+     <h2>Table Data(td) or Table Head(th) Attributes</h2>
+     <p>bgcolor, rowspan(merge raws), colsapn(merge columns)</p>
+
+     <table border="2px">
+        <thead>
+            <tr>
+                <th bgcolor="lime">Course</th>
+                <th bgcolor="yellow">Fee</th>
+                <th bgcolor="skyblue">Duration</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td bgcolor="red">Web Development</td>
+                <td bgcolor="blue">10000</td>
+                <td bgcolor="green">3 Months</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" align="center" bgcolor="gray">colspan</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" bgcolor="orange">Laravel</td>
+                <td bgcolor="pink">7000</td>
+                <td bgcolor="aqua">2 Months</td>
+            </tr>
+
+            <tr>
+                <td>5000</td>
+                <td>1 Month</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Break</td>
+                <td>15 Days</td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>
